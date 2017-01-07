@@ -13,7 +13,7 @@ pub extern crate teensy3_sys as bindings;
 /// "Safe" wrappers
 #[macro_use]
 pub mod serial;
-pub mod spi;
+//pub mod spi;
 pub mod util;
 
 /// Processor panic

@@ -1,4 +1,5 @@
 #![no_std]
+#![feature(untagged_unions)]
 #![allow(dead_code, non_snake_case, non_camel_case_types, non_upper_case_globals, improper_ctypes)]
 
 include!("bindings.rs");
@@ -9,6 +10,7 @@ mod std {
         #[allow(non_camel_case_types)]
         pub mod raw {
             pub enum c_void {}
+            pub type c_char = i8;
             pub type c_uchar = u8;
             pub type c_short = i16;
             pub type c_ushort = u16;
